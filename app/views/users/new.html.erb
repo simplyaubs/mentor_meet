@@ -1,0 +1,14 @@
+<%= form_for @user do |t| %>
+
+  <%= t.label :first_name %>
+  <%= t.text_field :first_name %>
+
+  <%= t.label :last_name %>
+  <%= t.text_field :last_name %>
+
+  <%= t.label :email %>
+  <%= t.text_field :email %>
+
+  <%= t.submit 'Register' %>
+
+<% end %>
