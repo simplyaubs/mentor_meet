@@ -1,14 +1,19 @@
-<%= form_for @user do |t| %>
-
-  <%= t.label :first_name %>
-  <%= t.text_field :first_name %>
-
-  <%= t.label :last_name %>
-  <%= t.text_field :last_name %>
-
-  <%= t.label :email %>
-  <%= t.text_field :email %>
-
-  <%= t.submit 'Register' %>
-
-<% end %>
+<table id="table">
+  <%= form_for @user do |t| %>
+    <tr>
+      <th><%= t.label :first_name %></th>
+      <td><%= t.text_field :first_name %></td>
+    </tr>
+    <tr>
+      <th><%= t.label :last_name %></th>
+      <td><%= t.text_field :last_name %></td>
+    </tr>
+    <tr>
+      <th><%= t.label :email %></th>
+      <td><%= t.text_field :email %></td>
+    </tr>
+    <tr>
+      <td><%= t.submit 'Register' %></td>
+    </tr>
+  <% end %>
+</table>
