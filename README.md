@@ -1,5 +1,3 @@
-== README
-
 [![Code Climate](https://codeclimate.com/github/simplyaubs/mentor_meet.png)](https://codeclimate.com/github/simplyaubs/mentor_meet)
 [![Build Status](https://travis-ci.org/simplyaubs/mentor_meet.svg?branch=master)](https://travis-ci.org/simplyaubs/mentor_meet)
 
