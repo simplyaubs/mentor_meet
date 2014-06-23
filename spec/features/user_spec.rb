@@ -18,6 +18,6 @@ feature 'user can register' do
     fill_in 'Email', with: 'tina@smith.com'
     click_on 'Register'
     expect(User.find_by_email('tina@smith.com')).to_not eq nil
-    expect(page).to have_content 'Thanks for registering!'
+    expect(page).to have_content 'Thanks for Registering'
   end
 end

@@ -1,12 +1,8 @@
-body {
-    margin: 0;
-}
-
 #navbar {
     width: 100%;
     height: 60px;
-    font-size: 15px;
-    background-color: grey;
+    font-size: 1em;
+    background-color: #424242;
 
 }
 
@@ -15,11 +11,32 @@ body {
     height: auto;
     padding: 20px 0px;
     margin: 0px;
+
 }
 
 #navbar li {
     display: inline;
-    padding: 4%;
+    padding: 3%;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    margin: 3%;
+}
+
+a {
+    text-decoration : none;
+    color: #FF9900;
+}
+
+
+.content_margin {
+    margin: 3%;
 }
 
 #table {
@@ -28,3 +45,28 @@ body {
     padding-top: 10%;
 }
 
+.form_styling {
+    position: absolute;
+    top: 275px;
+    margin-left: 37%;
+    font-size: 1.1em;
+
+.input {
+    height: 22px;
+    font-size: .75em;
+}
+
+/* Full Background Images */
+
+.bg-full-image {
+    position: relative;
+    background-color:#434343;
+    margin-bottom: 40px;
+}
+.bg-full-image img {
+    display: block;
+    width: 100%;
+    padding: 0 auto;
+    border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px;
+}
