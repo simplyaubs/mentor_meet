@@ -3,7 +3,6 @@
     height: 60px;
     font-size: 1em;
     background-color: #424242;
-
 }
 
 #navbar ul {
@@ -11,13 +10,11 @@
     height: auto;
     padding: 20px 0px;
     margin: 0px;
-
 }
 
 #navbar li {
     display: inline;
     padding: 3%;
-
 }
 
 body {
@@ -30,7 +27,7 @@ h1 {
 }
 
 a {
-    text-decoration : none;
+    text-decoration: none;
     color: #FF9900;
 }
 
@@ -50,6 +47,7 @@ a {
     top: 275px;
     margin-left: 37%;
     font-size: 1.1em;
+}
 
 .input {
     height: 22px;
@@ -63,6 +61,7 @@ a {
     background-color:#434343;
     margin-bottom: 40px;
 }
+
 .bg-full-image img {
     display: block;
     width: 100%;
