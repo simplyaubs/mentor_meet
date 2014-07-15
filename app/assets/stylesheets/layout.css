@@ -49,8 +49,6 @@ a {
 .bg-full-image {
     background: url("hero_image.jpg");
     background-postion: top center;
-    /*background-color:#434343;*/
-    /*margin-bottom: 40px;*/
     background-size: cover;
     height: 610px;
     position: relative;
