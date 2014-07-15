@@ -1,5 +1,15 @@
 language: ruby
 rvm:
-  - 2.1.1
+- 2.1.1
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:create db:migrate
+- RAILS_ENV=test bundle exec rake --trace db:create db:migrate
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: JP7/960NN9wntTZPAJP1O+4PjgX6tKcSxIvXuFSHI2DWS9MDxTvtFiY/ixtIxKZqgch0c5je/MTMjzvYNkC6fxFKX4lD0yxSvmfutlTzWgmAgYK9HkQ2n0wdokv6gcx5X4Zd0zCIcEgehj4AlqY8haonaCzDvfyl5z3AvcMrD1s=
+  app: mentormeet
+  on:
+    repo: simplyaubs/mentor_meet
