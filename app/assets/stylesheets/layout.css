@@ -2,7 +2,7 @@
     width: 100%;
     height: 60px;
     font-size: 1em;
-    background-color: #424242;
+    background-color: #ffffff;
 }
 
 #navbar ul {
@@ -21,19 +21,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-h1 {
-    margin: 3%;
-}
-
 a {
     text-decoration: none;
-    color: #FF9900;
-}
-
-
-.content_margin {
-    margin: 3%;
+    color: #000000;
 }
 
 #table {
@@ -57,9 +47,13 @@ a {
 /* Full Background Images */
 
 .bg-full-image {
+    background: url("hero_image.jpg");
+    background-postion: top center;
+    /*background-color:#434343;*/
+    /*margin-bottom: 40px;*/
+    background-size: cover;
+    height: 610px;
     position: relative;
-    background-color:#434343;
-    margin-bottom: 40px;
 }
 
 .bg-full-image img {
@@ -68,4 +62,53 @@ a {
     padding: 0 auto;
     border-top: #000000 solid 1px;
     border-bottom: #000000 solid 1px;
+}
+
+div.spacer {
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    bottom: 0;
+    min-height: 92px;
+    position: absolute;
+    color: white;
+}
+
+div.spacer h1 {
+    text-align: center;
+    color: white;
+}
+
+div.spacer button {
+    color: white;
+}
+
+.content_margin {
+    margin: 1%;
+}
+
+.homepage_text {
+    float: right;
+    text-align: left;
+    margin: 100px 40px auto auto;
+}
+
+.homepage_text h1 {
+    font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    color: #fc6856;
+    font-style: normal;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    width: auto;
+    margin: 0;
+}
+
+.homepage_text p {
+    font-family: "ff-tisa-web-pro", "adelle", "Adelle", "Merriweather", Georgia, serif;
+    font-weight: 300;
+    color: #fff;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.2em;
 }
