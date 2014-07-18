@@ -187,7 +187,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy (~> 2.4.2)
-  omniauth-github
+  omniauth-github (~> 1.1.2)
   pg
   pry-debugger
   rails (= 4.1.1)
