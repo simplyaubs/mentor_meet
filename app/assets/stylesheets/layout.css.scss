@@ -1,101 +1,101 @@
 #navbar {
-    width: 100%;
-    height: 60px;
-    font-size: 1em;
-    background-color: #ffffff;
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #navbar ul {
-    list-style-type: none;
-    height: auto;
-    padding: 20px 0px;
-    margin: 0px;
+  list-style-type: none;
+  height: auto;
+  padding: 10px 0px;
 }
 
 #navbar li {
-    display: inline;
-    padding: 3%;
+  display: inline;
+  padding: 3%;
 }
 
-#login {
-  display: block;
-  width: 115px;
-  height: 25px;
-  background: #5c5856;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
+#navbar li a img {
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  margin-top: -17px;
+}
+
+header {
+//  margin-top: -15px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 #table {
-    text-align: left;
-    padding-left: 43%;
-    padding-top: 10%;
+  text-align: left;
+  padding-left: 43%;
+  padding-top: 10%;
 }
 
 .form_styling {
-    position: absolute;
-    top: 275px;
-    margin-left: 37%;
-    font-size: 1.1em;
+  position: absolute;
+  top: 275px;
+  margin-left: 37%;
+  font-size: 1.1em;
 }
 
 .input {
-    height: 22px;
-    font-size: .75em;
+  height: 22px;
+  font-size: .75em;
 }
 
 /* Full Background Images */
 
 .bg-full-image {
-    background: image-url("hero_image.jpg");
-    background-postion: top center;
-    background-size: cover;
-    height: 610px;
-    position: relative;
+  background: image-url("hero_image.jpg");
+  background-postion: top center;
+  background-size: cover;
+  height: 610px;
+  position: relative;
 }
 
 .bg-full-image img {
-    display: block;
-    width: 100%;
-    padding: 0 auto;
-    border-top: #000000 solid 1px;
-    border-bottom: #000000 solid 1px;
+  display: block;
+  width: 100%;
+  padding: 0 auto;
+  border-top: #000000 solid 1px;
+  border-bottom: #000000 solid 1px;
 }
 
 div.spacer {
-    width: 100%;
-    background-color: black;
-    opacity: 0.4;
-    bottom: 0;
-    min-height: 92px;
-    position: absolute;
-    color: white;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  bottom: 0;
+  min-height: 92px;
+  position: absolute;
+  color: white;
 }
 
 div.spacer h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 div.spacer button {
-    color: white;
+  color: white;
 
 }
 
 .content_margin {
-    margin: 1%;
+  margin: 1%;
 }
 
 .content_margin form {
@@ -105,27 +105,27 @@ div.spacer button {
 }
 
 .homepage_text {
-    float: right;
-    text-align: left;
-    margin: 100px 40px auto auto;
+  float: right;
+  text-align: left;
+  margin: 100px 40px auto auto;
 }
 
 .homepage_text h1 {
-    font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 300;
-    color: #fc6856;
-    font-style: normal;
-    font-size: 3.2em;
-    text-transform: uppercase;
-    width: auto;
-    margin: 0;
+  font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  color: #fc6856;
+  font-style: normal;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  width: auto;
+  margin: 0;
 }
 
 .homepage_text p {
-    font-family: "ff-tisa-web-pro", "adelle", "Adelle", "Merriweather", Georgia, serif;
-    font-weight: 300;
-    color: #fff;
-    font-style: normal;
-    font-size: 26px;
-    line-height: 1.2em;
+  font-family: "ff-tisa-web-pro", "adelle", "Adelle", "Merriweather", Georgia, serif;
+  font-weight: 300;
+  color: #fff;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.2em;
 }
