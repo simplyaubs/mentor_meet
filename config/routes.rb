@@ -2,11 +2,9 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
-  get '/register', to: 'users#new', as: :register
+  get "/auth/:provider/callback" => 'sessions#create'
 
-  post '/users', to: 'users#create', as: :users
-
-  get '/login', to: 'sessions#new', as: :login
+  get 'signout' => 'sessions#destroy', as: :signout
 
   resources :sessions
 end
