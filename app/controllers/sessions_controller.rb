@@ -1,3 +1,5 @@
+require 'pp'
+
 class SessionsController < ApplicationController
 
   def create
