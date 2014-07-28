@@ -6,8 +6,8 @@ module OmniauthMacros
       "provider" => "github",
       "uid" => "12345",
       "info" => {
-        "email" => "tina@example.com",
-        "name" => "Tina",
+        "email" => "verdie@example.com",
+        "name" => "Verdie",
       }
     }
   end
