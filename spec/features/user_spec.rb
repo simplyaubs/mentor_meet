@@ -10,12 +10,15 @@ feature 'user can sign in with GitHub' do
 end
 
 feature 'user can create a mentorship session' do
-  pending
   scenario 'user can create a mentorship session' do
-    mock_omniauth
 
     visit '/'
+    find('#login a').click
+    mock_omniauth
 
-
+    click_on 'Create a Mentoring Session'
+    expect(page).to have_content 'Create a Session'
   end
+
+  
 end
