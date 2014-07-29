@@ -20,5 +20,5 @@ feature 'user can create a mentorship session' do
     expect(page).to have_content 'Create a Session'
   end
 
-  
+
 end

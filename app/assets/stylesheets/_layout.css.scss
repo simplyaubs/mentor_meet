@@ -1,0 +1,26 @@
+.body-content {
+  @include outer-container;
+}
+
+.columns {
+  @include row();
+}
+
+.column {
+
+  &.half {
+    @include span-columns(6);
+  }
+
+  &.fourth {
+    @include span-columns(3);
+  }
+
+  &.third {
+    @include span-columns(4);
+  }
+}
+
+.feature {
+  background-color: grey;
+}
