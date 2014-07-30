@@ -1,1 +1,15 @@
 <h1>Create a Session</h1>
+
+<%= form_for @appointment do |f| %>
+  <p>
+    <%= f.label :time %>
+    <%= f.text_field :time %>
+  </p>
+  <p>
+    <%= f.label :language %>
+    <%= f.text_field :language %>
+  </p>
+  <p>
+    <%= f.submit 'Create Appointment' %>
+  </p>
+<% end %>
