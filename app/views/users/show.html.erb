@@ -3,7 +3,7 @@
 <p>Hello <%= @user.name %></p>
 
 <%= link_to 'Create a Mentoring Session', new_appointment_path  %>
-<%= link_to 'Book Mentoring Session', book_path %>
+<%= link_to 'Book Mentoring Session', appointments_path %>
 
 <h2>My Created Appointments</h2>
 <% @appointments.each do |appointment| %>
@@ -11,3 +11,7 @@
   <%= appointment.time %> - <%= appointment.language %>
 </li>
 <% end %>
+
+<p>'7:00'</p>
+<p>'Go'</p>
+<p>'Session successfully booked!'</p>

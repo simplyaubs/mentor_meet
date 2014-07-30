@@ -1,7 +1,7 @@
 class AppointmentsController < ApplicationController
 
   def index
-
+    @appointments = Appointment.all
   end
 
   def new
@@ -17,8 +17,8 @@ class AppointmentsController < ApplicationController
     end
   end
 
-  def book
-
+def book
+    redirect_to user_path(current_user), :notice => "Session successfully booked!"
   end
 
   private
