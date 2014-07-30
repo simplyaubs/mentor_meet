@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   resources :appointments
 
+  get 'book', to: 'appointments#book'
+
 end

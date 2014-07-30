@@ -17,6 +17,10 @@ class AppointmentsController < ApplicationController
     end
   end
 
+  def book
+
+  end
+
   private
   def appointment_params
     params.require(:appointment).permit(:time, :language)

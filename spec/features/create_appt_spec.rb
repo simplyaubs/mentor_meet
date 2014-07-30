@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 feature 'Mentorship Appointments' do
   before(:each) do
     visit root_path
@@ -23,4 +22,5 @@ feature 'Mentorship Appointments' do
     expect(page).to have_content 'My Dashboard'
     expect(page).to have_content 'Appointment successfully created!'
   end
+
 end
