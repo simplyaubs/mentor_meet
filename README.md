@@ -20,7 +20,12 @@ Think of this as the story that you tell your friends and family when they ask w
 
 Please follow the steps below to get this site set up for local development.
 
-1. Step 1
-1. Step 2
-1. Step 3
-1. Step 4 ...
+* `bundle`
+* `rake db:create db:migrate db:seed`
+* `rails s`
+
+You can run specs with:
+
+* `rspec`
+
+
