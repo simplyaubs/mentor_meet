@@ -1,3 +1,13 @@
 <h1>Book a Session</h1>
 
-<%= button_to 'Book Session', book_path, method: :get %>
+<% @appointments.each do |appointment| %>
+  <li>
+    <%= form_for appointment do |f| %>
+
+      <%= appointment.time %> - <%= appointment.language %>
+      <%= f.submit 'Book Session' %>
+    <% end %>
+
+
+  </li>
+<% end %>

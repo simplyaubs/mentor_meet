@@ -2,16 +2,15 @@
 
 <p>Hello <%= @user.name %></p>
 
-<%= link_to 'Create a Mentoring Session', new_appointment_path  %>
+<%= link_to 'Create a Mentoring Session', new_appointment_path %>
 <%= link_to 'Book Mentoring Session', appointments_path %>
 
-<h2>My Created Appointments</h2>
-<% @appointments.each do |appointment| %>
-<li>
-  <%= appointment.time %> - <%= appointment.language %>
-</li>
-<% end %>
+<h2>My Appointments</h2>
 
-<p>'7:00'</p>
-<p>'Go'</p>
-<p>'Session successfully booked!'</p>
+<ul>
+  <% @user.appointments.each do |appointment| %>
+    <li>
+      <%= appointment.time %> - <%= appointment.language %>
+    </li>
+  <% end %>
+</ul>
