@@ -1,16 +1,28 @@
-<h1>My Dashboard</h1>
+<div class="body-content">
+  <h1 class="centered">My Dashboard</h1>
 
-<p>Hello <%= @user.name %></p>
+  <p>Hello <%= @user.name %></p>
 
-<%= link_to 'Create a Mentoring Session', new_appointment_path %>
-<%= link_to 'Book Mentoring Session', appointments_path %>
+  <div class="book-session-link">
+    <%= link_to 'Book a Mentoring Session', appointments_path %>
+  </div>
+  <div class="create-session-link">
+    <%= link_to 'Create a Mentoring Session', new_appointment_path %>
+  </div>
 
-<h2>My Appointments</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<ul>
-  <% @user.appointments.each do |appointment| %>
-    <li>
-      <%= appointment.time %> - <%= appointment.language %>
-    </li>
-  <% end %>
-</ul>
+  <h2 class="centered">My Appointments</h2>
+
+  <ul class="centered">
+    <% @user.appointments.each do |appointment| %>
+      <li>
+        <%= appointment.time %> - <%= appointment.language %>
+      </li>
+    <% end %>
+  </ul>
+</div>
