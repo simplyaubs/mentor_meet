@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+if User.count == 0
+  raise "You must run the app and login w/ github first!!!"
+end
+
+Appointment.destroy_all
+User.where(email: 'mentor@example.com').destroy_all
+
+mentor = User.create!(uid: '12345',email: 'mentor@example.com', name: 'Mentor')
+
+(1..9).each do |hour|
+  Appointment.create!(
+    time: "#{hour}:00",
+    language: 'Ruby',
+    mentor_id: mentor.id
+  )
+end

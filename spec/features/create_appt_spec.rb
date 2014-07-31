@@ -8,7 +8,7 @@ feature 'Mentorship Appointments' do
     click_on 'Create a Mentoring Session'
   end
 
-  scenario 'user navagates to create an appointment' do
+  scenario 'user navigates to create an appointment' do
     expect(page).to have_content 'Create a Session'
   end
 
