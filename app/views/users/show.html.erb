@@ -21,7 +21,7 @@
   <ul class="centered">
     <% @user.appointments.each do |appointment| %>
       <li>
-        <%= appointment.time %> - <%= appointment.language %>
+        <%= appointment.time.strftime("%A, %B %e, %Y %l:%M%P") %> - <%= appointment.language %>
       </li>
     <% end %>
   </ul>

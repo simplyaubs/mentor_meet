@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730224129) do
+ActiveRecord::Schema.define(version: 20140801214512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "appointments", force: true do |t|
-    t.string  "time"
-    t.string  "language"
-    t.integer "mentor_id"
-    t.integer "mentee_id"
+    t.string   "language"
+    t.integer  "mentor_id"
+    t.integer  "mentee_id"
+    t.datetime "time"
   end
 
   create_table "users", force: true do |t|

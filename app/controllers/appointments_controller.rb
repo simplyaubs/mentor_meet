@@ -30,6 +30,10 @@ class AppointmentsController < ApplicationController
 
   private
   def appointment_params
-    params.require(:appointment).permit(:time, :language)
+    Chronic.time_class = Time.zone
+    {
+      language: params[:appointment][:language],
+      time: Chronic.parse(params[:appointment][:time])
+    }
   end
 end

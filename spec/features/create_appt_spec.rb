@@ -13,11 +13,12 @@ feature 'Mentorship Appointments' do
   end
 
   scenario 'user create appointment' do
-    fill_in 'Time', with: '6:00'
+    fill_in 'Time', with: 'tomorrow 6:00pm'
     select 'Ruby', from: 'Language'
     click_on 'Create Session'
 
-    expect(page).to have_content '6:00'
+    expect(page).to have_content Chronic.parse('tomorrow 6:00pm').strftime("%A, %B %e, %Y")
+    expect(page).to have_content '6:00pm'
     expect(page).to have_content 'Ruby'
     expect(page).to have_content 'My Dashboard'
     expect(page).to have_content 'Appointment successfully created!'
