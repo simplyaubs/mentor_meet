@@ -6,7 +6,7 @@
     <li>
       <%= form_for appointment do |f| %>
 
-        <%= appointment.time %> - <%= appointment.language %>
+        <%= appointment.time.strftime("%A, %B %e, %Y %l:%M%P") %> - <%= appointment.language %>
         <%= f.submit 'Book Session' %>
       <% end %>
 
