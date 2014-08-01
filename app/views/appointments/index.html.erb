@@ -1,13 +1,16 @@
-<h1>Book a Session</h1>
+<div class="centered">
 
-<% @appointments.each do |appointment| %>
-  <li>
-    <%= form_for appointment do |f| %>
+  <h1>Book a Session</h1>
 
-      <%= appointment.time %> - <%= appointment.language %>
-      <%= f.submit 'Book Session' %>
-    <% end %>
+  <% @appointments.each do |appointment| %>
+    <li>
+      <%= form_for appointment do |f| %>
+
+        <%= appointment.time %> - <%= appointment.language %>
+        <%= f.submit 'Book Session' %>
+      <% end %>
 
 
-  </li>
-<% end %>
+    </li>
+  <% end %>
+</div>
