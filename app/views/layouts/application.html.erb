@@ -24,19 +24,21 @@
         <li>
           <%= link_to "Logout", signout_path, class: 'colored' %>
         </li>
-        <% else  %>
+      <% else %>
         <li id="login">
           <a href="/auth/github" class="colored">
             <%= image_tag 'Github-button.png', alt: 'Sign in with GitHub' %>
           </a>
         </li>
-        <% end  %>
+      <% end %>
 
     </ul>
   </nav>
 </header>
 
-<%= flash[:notice] %>
+<div class="flash">
+  <%= flash[:notice] %>
+</div>
 
 <%= yield %>
 
