@@ -25,7 +25,7 @@ class AppointmentsController < ApplicationController
     @appointment.update_attributes!(mentee_id: current_user.id)
 
 
-    redirect_to user_path(current_user)
+    redirect_to user_path(current_user), :notice => "Session successfully booked!"
   end
 
   private
