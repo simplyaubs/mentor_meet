@@ -19,7 +19,7 @@
       <li><a href="#about_us">ABOUT US</a></li>
       <% if current_user %>
         <li>
-          <span class="colored">Hello <%= current_user.name %></span>
+          <%= link_to "Hello #{current_user.name}", user_path(current_user), class: 'colored' %>
         </li>
         <li>
           <%= link_to "Logout", signout_path, class: 'colored' %>
