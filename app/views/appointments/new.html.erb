@@ -2,21 +2,22 @@
   <div class="centered">
     <h1>Create a Session</h1>
     <table class="table">
-    <%= form_for @appointment do |f| %>
-      <tr>
-       <td> <%= f.label :time %></td>
-        <td><%= f.text_field :time %></td>
-      </tr>
+      <%= form_for @appointment do |f| %>
+        <tr>
+          <td> <%= f.label :time %></td>
+          <td><%= f.text_field :time %></td>
+        </tr>
+
 
         <tr>
-        <td><%= f.label :language %></td>
-        <td><%= f.text_field :language %></td>
+          <td><%= f.label :language %></td>
+          <td><%= select(:appointment, :language, [['Ruby', 'Ruby'], ['HTML', 'HTML'], ['CSS', 'CSS'], ['JavaScript', 'JavaScript']]) %></td>
         </tr>
 
         <tr>
-        <td><%= f.submit 'Create Appointment' %></td>
+          <td><%= f.submit 'Create Appointment' %></td>
         </tr>
-    <% end %>
+      <% end %>
     </table>
   </div>
 </div>

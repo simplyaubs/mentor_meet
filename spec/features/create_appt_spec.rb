@@ -14,7 +14,7 @@ feature 'Mentorship Appointments' do
 
   scenario 'user create appointment' do
     fill_in 'Time', with: '6:00'
-    fill_in 'Language', with: 'Ruby'
+    select 'Ruby', from: 'Language'
     click_on 'Create Appointment'
 
     expect(page).to have_content '6:00'
