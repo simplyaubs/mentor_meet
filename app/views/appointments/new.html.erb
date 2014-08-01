@@ -1,19 +1,22 @@
 <div class="body-content">
-  <h1>Create a Session</h1>
+  <div class="centered">
+    <h1>Create a Session</h1>
+    <table class="table">
+    <%= form_for @appointment do |f| %>
+      <tr>
+       <td> <%= f.label :time %></td>
+        <td><%= f.text_field :time %></td>
+      </tr>
 
-  <%= form_for @appointment do |f| %>
-    <p>
-      <%= f.label :time %>
-      <%= f.text_field :time %>
-    </p>
+        <tr>
+        <td><%= f.label :language %></td>
+        <td><%= f.text_field :language %></td>
+        </tr>
 
-    <p>
-      <%= f.label :language %>
-      <%= f.text_field :language %>
-    </p>
-
-    <p>
-      <%= f.submit 'Create Appointment' %>
-    </p>
-  <% end %>
+        <tr>
+        <td><%= f.submit 'Create Appointment' %></td>
+        </tr>
+    <% end %>
+    </table>
+  </div>
 </div>

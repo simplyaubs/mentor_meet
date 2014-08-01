@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
   has_many :appointments, foreign_key: :mentee_id
   has_many :appointments, foreign_key: :mentor_id
 
