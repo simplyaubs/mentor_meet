@@ -149,17 +149,23 @@ a {
   }
 }
 
+.call-to-action {
+  background-color: #fc6856;
+  padding: 20px;
+  border: 2px black solid;
+}
+
 .book-session-link {
   float: left;
   font-size: 1.5em;
-  padding-left: 10%;
+  margin-left: 10%;
 
 }
 
 .create-session-link {
   float: right;
   font-size: 1.5em;
-  padding-right: 10%;
+  margin-right: 10%;
 }
 
 .table {

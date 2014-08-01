@@ -1,12 +1,10 @@
 <div class="body-content">
   <h1 class="centered">My Dashboard</h1>
 
-  <p>Hello <%= @user.name %></p>
-
-  <div class="book-session-link">
+  <div class="book-session-link call-to-action">
     <%= link_to 'Book a Mentoring Session', appointments_path %>
   </div>
-  <div class="create-session-link">
+  <div class="create-session-link call-to-action">
     <%= link_to 'Create a Mentoring Session', new_appointment_path %>
   </div>
 
