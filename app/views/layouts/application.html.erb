@@ -16,13 +16,22 @@
       <li><a href="#mentor">MENTOR</a></li>
       <li><a href="#mentee">STUDENT</a></li>
       <li><a href="/">MENTORMEET</a></li>
-      <li><a href="#">TESTIMONIALS</a></li>
       <li><a href="#about_us">ABOUT US</a></li>
-      <li id="login">
-        <a href="/auth/github">
-          <%= image_tag 'Github-button.png', alt: 'Sign in with GitHub' %>
-        </a>
-      </li>
+      <% if current_user %>
+        <li>
+          <span class="colored">Hello <%= current_user.name %></span>
+        </li>
+        <li>
+          <%= link_to "Logout", signout_path, class: 'colored' %>
+        </li>
+        <% else  %>
+        <li id="login">
+          <a href="/auth/github" class="colored">
+            <%= image_tag 'Github-button.png', alt: 'Sign in with GitHub' %>
+          </a>
+        </li>
+        <% end  %>
+
     </ul>
   </nav>
 </header>
