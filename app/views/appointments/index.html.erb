@@ -1,16 +1,36 @@
-<div class="centered">
+<div class="body-content">
+  <div class="centered">
+    <h1>Book a Session</h1>
+  </div>
 
-  <h1>Book a Session</h1>
+  <table class="sessions">
 
-  <% @appointments.each do |appointment| %>
-    <li>
-      <%= form_for appointment do |f| %>
+    <tr>
+      <td class="header">
+        Session Time
+      </td>
+      <td class="header">
+        Session Language
+      </td>
+      <td class="header">
+        Book Session
+      </td>
+    </tr>
 
-        <%= appointment.time.strftime("%A, %B %e, %Y %l:%M%P") %> - <%= appointment.language %>
-        <%= f.submit 'Book Session' %>
-      <% end %>
-
-
-    </li>
-  <% end %>
+    <% @appointments.each do |appointment| %>
+      <tr class="session">
+        <%= form_for appointment do |f| %>
+          <td>
+            <%= appointment.time.strftime("%A, %B %e, %Y %l:%M%P") %>
+          </td>
+          <td>
+            <%= appointment.language %>
+          </td>
+          <td>
+            <%= f.submit 'Book Session' %>
+          </td>
+          </tr>
+        <% end %>
+    <% end %>
+  </table>
 </div>
