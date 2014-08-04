@@ -3,9 +3,18 @@
     <h1>Create a Session</h1>
     <table class="sessions">
       <%= form_for @appointment do |f| %>
+
+        <% if @appointment.errors.present? %>
+          <% @appointment.errors.full_messages.each do |error| %>
+            <div>
+              <%= error %>
+            </div>
+          <% end %>
+        <% end %>
+
         <tr class="session">
           <td class="header"> <%= f.label :time %></td>
-          <td class="header"> <%= f.text_field :time %></td>
+          <td class="header"> <%= f.text_field :time, placeholder: "Tomorrow at 2pm"%></td>
         </tr>
 
 
