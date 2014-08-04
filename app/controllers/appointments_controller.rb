@@ -1,8 +1,8 @@
 class AppointmentsController < ApplicationController
- #require login
+  #require login
 
   def index
-    @appointments = Appointment.all
+    @appointments = Appointment.where(mentee_id: nil).where.not(mentor_id: current_user)
   end
 
   def new
@@ -11,7 +11,6 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointment = Appointment.new(appointment_params)
-    @appointment.mentor_id = current_user.id
 
     if @appointment.save
       redirect_to user_path(current_user), :notice => "Appointment successfully created!"
@@ -33,7 +32,8 @@ class AppointmentsController < ApplicationController
     Chronic.time_class = Time.zone
     {
       language: params[:appointment][:language],
-      time: Chronic.parse(params[:appointment][:time])
+      time: Chronic.parse(params[:appointment][:time]),
+      mentor_id: current_user.id,
     }
   end
 end
