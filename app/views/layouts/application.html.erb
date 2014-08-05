@@ -13,10 +13,10 @@
   <nav id="navbar">
     <ul>
       <li><a href="/">MENTORMEET</a></li>
-      <li><a href="#how_this_works">HOW IT WORKS</a></li>
-      <li><a href="#mentor">MENTOR</a></li>
-      <li><a href="#mentee">STUDENT</a></li>
-      <li><a href="#about_us">ABOUT US</a></li>
+      <li><a href="/#how_this_works">HOW IT WORKS</a></li>
+      <li><a href="/#mentor">MENTOR</a></li>
+      <li><a href="/#mentee">STUDENT</a></li>
+      <li><a href="/#about_us">ABOUT US</a></li>
       <% if current_user %>
         <li>
           <%= link_to "Hello #{current_user.name}", user_path(current_user), class: 'colored' %>
