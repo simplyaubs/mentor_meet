@@ -13,7 +13,7 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.new(appointment_params)
 
     if @appointment.save
-      redirect_to user_path(current_user), :notice => "Appointment successfully created!"
+      redirect_to dashboard_path, :notice => "Appointment successfully created!"
     else
       render :new
     end
@@ -24,7 +24,7 @@ class AppointmentsController < ApplicationController
     @appointment.update_attributes!(mentee_id: current_user.id)
 
 
-    redirect_to user_path(current_user), :notice => "Session successfully booked!"
+    redirect_to dashboard_path, :notice => "Session successfully booked!"
   end
 
   private

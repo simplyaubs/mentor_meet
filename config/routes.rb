@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   get 'book', to: 'appointments#book'
 
+  get 'dashboard', to: 'users#dashboard'
+
 end
