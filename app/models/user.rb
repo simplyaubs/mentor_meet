@@ -18,6 +18,16 @@ class User < ActiveRecord::Base
     Appointment.where("mentor_id = ? or mentee_id = ?", id, id)
   end
 
+  def upcoming_appointments
+    #what happens when there aren't appointments?
+    #SQL based sort?
+    if appointments.present?
+      appointments.where("time > ?", Time.now).sort_by(&:time)
+    else
+      []
+    end
+  end
+
   def mentoring_appointments
     Appointment.where(mentor_id: id)
   end
