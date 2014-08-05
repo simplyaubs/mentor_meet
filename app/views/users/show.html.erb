@@ -39,6 +39,12 @@
         <td>
           <%= appointment.language %>
         </td>
+        <td>
+          <%= appointment.mentor.name %>
+        </td>
+        <td>
+          <%= appointment.mentee ? appointment.mentee.name : "Not Booked" %>
+        </td>
       </tr>
     <% end %>
   </table>
