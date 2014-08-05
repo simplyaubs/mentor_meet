@@ -8,7 +8,7 @@ feature 'Mentee Appointments' do
     visit root_path
     find('#login a').click
     mock_omniauth
-    click_on 'Book a Mentoring Session'
+    click_on 'Get Help (Student)'
 
     click_on 'Book Session'
 

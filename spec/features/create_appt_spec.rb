@@ -5,7 +5,7 @@ feature 'Mentorship Appointments' do
     visit root_path
     find('#login a').click
     mock_omniauth
-    click_on 'Create a Mentoring Session'
+    click_on 'Give Help (Mentor)'
   end
 
   scenario 'user navigates to create an appointment' do
