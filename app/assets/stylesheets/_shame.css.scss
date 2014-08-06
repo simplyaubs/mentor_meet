@@ -209,7 +209,10 @@ a {
   .session {
     border: 2px black solid;
     &:nth-child(odd){
-      background-color: lighten(#fc6856, 25%);
+      background-color: lighten(#0466b1, 35%);
+    }
+    &:nth-child(even) {
+      background-color: white;
     }
   }
 }
