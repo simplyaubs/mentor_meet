@@ -1,33 +1,37 @@
-<div class="body-content">
+<div class="dashboard">
   <div class="centered">
     <h1>Create a Session</h1>
-    <table class="sessions">
-      <%= form_for @appointment do |f| %>
 
-        <% if @appointment.errors.present? %>
-          <% @appointment.errors.full_messages.each do |error| %>
-            <div>
-              <%= error %>
-            </div>
+    <div class="form_styling">
+      <table class="form_table">
+        <%= form_for @appointment do |f| %>
+
+          <% if @appointment.errors.present? %>
+            <% @appointment.errors.full_messages.each do |error| %>
+              <div>
+                <%= error %>
+              </div>
+            <% end %>
           <% end %>
+
+          <tr>
+            <td><%= f.label :time %></td>
+            <td><%= f.text_field :time, placeholder: "Tomorrow at 2pm" %></td>
+          </tr>
+          <br>
+          <tr>
+
+            <td><%= f.label :language %></td>
+            <td><%= select(:appointment, :language, [['Select a language', 'Select a language'], ['Ruby', 'Ruby'], ['HTML', 'HTML'], ['CSS', 'CSS'], ['JavaScript', 'JavaScript']]) %></td>
+          </tr>
+          <br>
+
+          <tr>
+            <td></td>
+            <td class="table_submit"><%= f.submit 'Create Session' %></td>
+          </tr>
         <% end %>
-
-        <tr class="session">
-          <td class="header"> <%= f.label :time %></td>
-          <td class="header"> <%= f.text_field :time, placeholder: "Tomorrow at 2pm"%></td>
-        </tr>
-
-
-        <tr class="session">
-          <td><%= f.label :language %></td>
-          <td><%= select(:appointment, :language, [['Select a language', 'Select a language'], ['Ruby', 'Ruby'], ['HTML', 'HTML'], ['CSS', 'CSS'], ['JavaScript', 'JavaScript']]) %></td>
-        </tr>
-
-        <tr class="session">
-          <td></td>
-          <td><%= f.submit 'Create Session' %></td>
-        </tr>
-      <% end %>
-    </table>
+      </table>
+    </div>
   </div>
 </div>

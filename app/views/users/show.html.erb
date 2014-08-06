@@ -1,51 +1,16 @@
-<div class="body-content">
-  <h1 class="centered">My Dashboard</h1>
+<div class="dashboard">
+  <h1 class="centered">User Profile</h1>
 
-  <div class="book-session-link call-to-action">
-    <%= link_to 'Get Help (Student)', appointments_path %>
+  <div class="centered">
+
+    User Name: <%= @user.name %>
+
+    <br>
+    <br>
+
+    User Email: <%= @user.email %>
+
   </div>
-  <div class="create-session-link call-to-action">
-    <%= link_to 'Give Help (Mentor)', new_appointment_path %>
-  </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
-  <h2>My Upcoming Sessions</h2>
-  <table class="sessions">
-    <tr>
-      <td class="header">
-        Session Time
-      </td>
-      <td class="header">
-        Session Language
-      </td>
-      <td class="header">
-        Mentor Name
-      </td>
-      <td class="header">
-        Student Name
-      </td>
-    </tr>
-
-    <% @user.upcoming_appointments.each do |appointment| %>
-      <tr class="session">
-        <td>
-          <%= appointment.time.strftime("%A, %B %e, %Y %l:%M%P") %>
-        </td>
-        <td>
-          <%= appointment.language %>
-        </td>
-        <td>
-          <%= appointment.mentor.name %>
-        </td>
-        <td>
-          <%= appointment.mentee ? appointment.mentee.name : "Not Booked" %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
 </div>
