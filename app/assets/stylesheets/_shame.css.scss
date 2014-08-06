@@ -139,8 +139,16 @@ a {
   margin-top: 2%;
 }
 
-.body-content {
-  margin: 0 10%;
+.dashboard {
+//  background-color: white;
+  background: rgba(225, 225, 225, .8);
+//  opacity: 0.6;
+  min-height: 40em;
+  padding: 2em;
+  margin-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
   .body-left {
     float: left;
     h3, a {
@@ -159,8 +167,14 @@ a {
   }
 }
 
-.call-to-action {
-  background-color: #fc6856;
+.body-content {
+  background-color: white;
+  padding: .1em 5em;
+}
+
+.call-to-action a {
+  color: #fc6856;
+  background-color: white;
   padding: 20px;
   border: 2px black solid;
 }
@@ -184,7 +198,7 @@ a {
 
 .sessions {
   .header {
-    background-color: #fc6856;
+    background-color: #0466b1;
   }
   td{
     padding: 12px;
