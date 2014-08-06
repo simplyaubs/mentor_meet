@@ -98,10 +98,21 @@ a {
   font-size: 1.3em;
 }
 
+.footer_margin {
+  margin: 1%;
+  margin-left: 70%;
+  font-size: 1.3em;
+
+}
+
 .content_margin form {
   width: 100px;
   margin: auto;
   padding-top: 10px;
+}
+
+.simplyaubs_link {
+  color: #fc6856;
 }
 
 .homepage_text {
@@ -140,9 +151,9 @@ a {
 }
 
 .dashboard {
-//  background-color: white;
+  //  background-color: white;
   background: rgba(225, 225, 225, .8);
-//  opacity: 0.6;
+  //  opacity: 0.6;
   min-height: 40em;
   padding: 2em;
   margin-top: 5em;
@@ -200,7 +211,7 @@ a {
   .header {
     background-color: #0466b1;
   }
-  td{
+  td {
     padding: 12px;
   }
   font-size: 1.5em;
@@ -208,7 +219,7 @@ a {
   border: 2px black solid;
   .session {
     border: 2px black solid;
-    &:nth-child(odd){
+    &:nth-child(odd) {
       background-color: lighten(#0466b1, 35%);
     }
     &:nth-child(even) {
