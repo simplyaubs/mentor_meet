@@ -27,6 +27,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background: image-url("hero_image.jpg") fixed;
 }
 
 a {
@@ -41,10 +42,20 @@ a {
 }
 
 .form_styling {
-  position: absolute;
+  border: 2px solid black;
   top: 275px;
-  margin-left: 37%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  min-height: 10em;
   font-size: 1.1em;
+  background-color: #0466b1;
+  .form_table {
+    margin-left: 25%;
+  }
+  .table_submit {
+    margin-left: 104%;
+  }
 }
 
 .input {
