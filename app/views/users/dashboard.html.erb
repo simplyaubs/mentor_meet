@@ -40,10 +40,14 @@
           <%= appointment.language %>
         </td>
         <td>
-          <%=  appointment.mentor.name if appointment.mentor  %>
+          <%= link_to "#{appointment.mentor.name}", user_path(appointment.mentor.id) if appointment.mentor %>
         </td>
         <td>
-          <%= appointment.mentee ? appointment.mentee.name : "Not Booked" %>
+          <% if appointment.mentee %>
+            <%= link_to "#{appointment.mentee.name}", user_path(appointment.mentee.id) %>
+          <% else %>
+            <%= "Not Booked" %>
+          <% end %>
         </td>
       </tr>
     <% end %>
