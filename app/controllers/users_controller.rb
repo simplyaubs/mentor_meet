@@ -4,12 +4,12 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @appointments = Appointment.all
+
   end
 
   def dashboard
-    @appointments = Appointment.all
     if current_user
+      @appointments = Appointment.all
       @user = User.find(current_user.id)
       @user_appointments = @user.upcoming_appointments
     else
