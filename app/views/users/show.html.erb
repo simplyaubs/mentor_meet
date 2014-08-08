@@ -2,16 +2,17 @@
   <h1 class="centered">User Profile</h1>
 
   <div class="centered">
+    <div class="profile_image">
+      <%= image_tag @user.avatar %>
+    </div>
 
-    <%= image_tag @user.avatar %>
+    <div class="profile_info">
+      User Name: <%= @user.name %>
 
-    User Name: <%= @user.name %>
+      <br>
 
-    <br>
-    <br>
-
-    User Email: <%= @user.email %>
-
+      User Email: <%= @user.email %>
+    </div>
   </div>
 
 
