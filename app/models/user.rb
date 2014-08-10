@@ -29,6 +29,14 @@ class User < ActiveRecord::Base
     end
   end
 
+  def previous_appointments
+    if appointments.present?
+      appointments.where("time < ?", Time.now).sort_by(&:time)
+    else
+      []
+    end
+  end
+
   def mentoring_appointments
     Appointment.where(mentor_id: id)
   end
