@@ -10,6 +10,8 @@ Meet mentors. Get help. Give help.
 
 MentorMeet is a place where developers of all different levels connect and share their knowledge.
 
+If this sounds like something you would like to be a part of, please let me know. I'd love to have some help making this great!
+
 ## Important Links
 
 * [Tracker](https://www.pivotaltracker.com/n/projects/1086300)
