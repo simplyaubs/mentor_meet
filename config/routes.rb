@@ -16,4 +16,6 @@ Rails.application.routes.draw do
 
   get 'dashboard', to: 'users#dashboard'
 
+  get 'thanks', to: 'users#thanks'
+
 end
