@@ -1,5 +1,4 @@
 class AppointmentsController < ApplicationController
-  #require login
 
   def index
     @appointments = Appointment.where(mentee_id: nil).where.not(mentor_id: current_user)
