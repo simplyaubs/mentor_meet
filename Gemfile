@@ -16,7 +16,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'dotenv-rails', '~> 0.11.1'
-  gem 'pry-debugger'
   gem 'rspec-rails', '~> 2.14.2'
   gem 'capybara', '~> 2.2.1'
   gem 'launchy', '~> 2.4.2'
