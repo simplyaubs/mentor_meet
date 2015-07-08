@@ -22,7 +22,6 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.find(params[:id])
     @appointment.update_attributes!(mentee_id: current_user.id)
 
-
     redirect_to dashboard_path, :notice => "Session successfully booked!"
   end
 
@@ -35,4 +34,5 @@ class AppointmentsController < ApplicationController
       mentor_id: current_user.id,
     }
   end
+
 end
